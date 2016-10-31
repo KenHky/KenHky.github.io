@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://www.huangkaiyi.me/2016/11/01/%E5%89%8D%E7%AB%AF%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%86%8D%E6%AC%A1%E5%85%A5%E9%97%A8%20-%20%E5%BC%82%E6%AD%A5/</loc>
+    <lastmod>2016-10-31T04:48:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端从入门到再次入门 - 异步</title>
+        <pubTime>2016-10-31T16:00:02.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangkaiyi.me/2016/07/24/%E5%8A%A8%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AAreact%20native%E7%9A%84date%20picker%E7%BB%84%E4%BB%B6/</loc>
+    <lastmod>2016-07-24T05:01:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>动手写一个react native的date picker组件</title>
+        <pubTime>2016-07-24T04:25:02.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangkaiyi.me/2016/05/05/%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95export%E4%BD%A0%E7%9A%84%E6%A8%A1%E5%9D%97-%E5%85%BC%E5%AE%B9AMD-CommonJS-Node-js%E7%AD%89/</loc>
+    <lastmod>2016-07-24T03:32:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>几种方法export你的模块(兼容AMD, CommonJS, Node.js等)</title>
+        <pubTime>2016-05-05T13:12:52.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangkaiyi.me/2016/07/24/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84react%20native%20menu%20button%E7%BB%84%E4%BB%B6/</loc>
+    <lastmod>2016-07-24T03:26:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>一个简单的react native menu button组件</title>
+        <pubTime>2016-07-23T16:07:52.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangkaiyi.me/2016/04/26/javascript%E5%88%A4%E6%96%AD%E4%B8%A4%E4%B8%AA%E5%A4%9A%E8%BE%B9%E5%BD%A2%E7%9B%B8%E4%BA%A4/</loc>
+    <lastmod>2016-07-23T03:52:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>javascript判断两个多边形相交</title>
+        <pubTime>2016-04-26T14:57:00.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
