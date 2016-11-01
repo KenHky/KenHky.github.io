@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.huangkaiyi.me/"/>
-  <updated>2016-10-31T05:37:45.000Z</updated>
+  <updated>2016-11-01T09:18:32.000Z</updated>
   <id>http://www.huangkaiyi.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.huangkaiyi.me/2016/11/01/%E5%89%8D%E7%AB%AF%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%86%8D%E6%AC%A1%E5%85%A5%E9%97%A8%20-%20%E5%BC%82%E6%AD%A5/"/>
     <id>http://www.huangkaiyi.me/2016/11/01/前端从入门到再次入门 - 异步/</id>
     <published>2016-10-31T16:00:02.000Z</published>
-    <updated>2016-10-31T05:37:45.000Z</updated>
+    <updated>2016-11-01T09:18:32.000Z</updated>
     
     <content type="html"><![CDATA[<p>异步是什么？那要从 javascript 这门语言说起。</p>
 <p>javascript 诞生于1995年，作为当时浏览器专属的脚本语言，它被设计成了单线程。也就是说它在同一时间内只能做一件事。为什么是这样的呢？想象一下当 javascript 为多线程时，用户在一个节点添加内容，又在一个线程删除这个节点，浏览器该怎么去响应呢？</p>
@@ -67,7 +67,7 @@
 <h2 id="Generator与TJ的co"><a href="#Generator与TJ的co" class="headerlink" title="Generator与TJ的co"></a>Generator与TJ的co</h2><p>Generator 中文含义是生成器。在 javascript 世界里，函数是不存在被执行之后还能暂停的情况，只有“被调用”和“没有被调用”的状态。当函数能够暂停的话会发生什么？</p>
 <p>Generator就是那个能够暂停的函数，它的本质可以理解为一种特殊的数据结构。和普通函数相比，它多了一个<code>*</code>号，<code>*</code>号出现在关键字 function 和函数名之间，如果是匿名函数，则出现在 function 和参数列表的起始括号之间。</p>
 <p>那么它是如何实现暂停的呢？通过函数里的 yield 关键字和 next 方法。我们先看一个例子简单的了解一下写法。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> g = <span class="function"><span class="keyword">function</span>* (<span class="params">a, b</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> sum = a + b;</div><div class="line">	<span class="keyword">yield</span> sum;</div><div class="line">	<span class="keyword">var</span> subtract = a - b;</div><div class="line">	<span class="keyword">yield</span> subtract;</div><div class="line">	<span class="keyword">return</span> a</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> generator = g(<span class="number">2</span>, <span class="number">1</span>);</div><div class="line"><span class="built_in">console</span>.log(generator.next()); <span class="comment">// &#123; value: 3, done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(generator.next()); <span class="comment">// &#123; value: 1, done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(generator.next()); <span class="comment">// &#123; value: 1, done: true &#125;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> g = <span class="function"><span class="keyword">function</span>* (<span class="params">a, b</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> sum = a + b;</div><div class="line">	<span class="keyword">yield</span> sum;</div><div class="line">	<span class="keyword">var</span> subtract = a - b;</div><div class="line">	<span class="keyword">yield</span> subtract;</div><div class="line">	<span class="keyword">return</span> a</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> generator = g(<span class="number">2</span>, <span class="number">1</span>);</div><div class="line"><span class="built_in">console</span>.log(generator.next()); <span class="comment">// &#123; value: 3, done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(generator.next()); <span class="comment">// &#123; value: 1, done: false &#125;</span></div><div class="line"><span class="built_in">console</span>.log(generator.next()); <span class="comment">// &#123; value: 2, done: true &#125;</span></div></pre></td></tr></table></figure>
 <p>我们一步一步的来解读下上面的例子：</p>
 <p>1.首先创建了一个 Generator 函数，命名为 g。</p>
 <p>2.实例化这个函数，命名为 generator。这时的 generator 是一个 Generator 对象，他有一个 next 方法。当你没有调用 next 的时候，Generator 函数内部执行到第一个 yield 前就暂停到这里不再执行了。</p>
